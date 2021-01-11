@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Práctica</title>
+  <link rel="stylesheet" href="./index.css" type="text/CSS">
+
+</head>
+<body>
+  <header><h2>Formulario Información Alta Telefónica</h2></header>
+  <section>
+    <form action="" > 
+      <fieldset class="field">
+        <legend class="">Datos Personales</legend>
+        <label class="space"for="nombre">Nombre:<input class="" type="text"id="nombre" name="nombre" value=""maxlength="30"/>
+        </label>
+         <label class="space" for="apellidos">Apellidos:
+
+           <input type="text"id="apellidos" name="apellidos" value=""maxlength="60"/>
+         </label>
+         <label class="space" for="direccion">Dirección:
+
+           <input type="text"id="direccion" name="direccion" value=""maxlength="60"/>
+         </label>
+         <label class="space" for="codigo">Código Postal:
+
+           <input type="number"id="codigo" name="codigo" value="" max="5"/>
+         </label>
+         <label class="space" for="localidad">Localidad:
+
+           <input type="text"id="localidad" name="localidad" value=""/>
+         </label>
+ </fieldset>
+ <fieldset class="field">
+   <legend>Tipo de Contratación</legend>
+   <input type="radio" name="contratacion" value="0" checked="checked">Nueva Contratación</input>
+   <input type="radio" name="contratacion" value="1">Portabilidad</input>
+   <input type="radio" name="contratacion" value="2">Cambio de Contrato</input>
+ </br></br>
+   <label >Elija la compañía actual: <select name="compañía" id="">
+     <option value="">Movistar</option>
+     <option value="">Orange</option>
+     <option value="">Vodafone</option>
+     <option value="">Yoigo</option>
+     <option value="">No tengo ninguna compañía</option>
+    
+   </select></label>
+   <label class="portable" >En caso de portabilidad, elija la nueva compañía: <select name="compañía" id="">
+    <option value="">Movistar</option>
+    <option value="">Orange</option>
+    <option value="">Vodafone</option>
+    <option value="">Yoigo</option>
+   
+  </select></label>
+ </fieldset>
+ <fieldset class="field">
+   <legend>Datos Bancarios</legend>
+   <label class="space">País<input type="text" value="ES" disabled="disabled">(solo válido ES)</label>
+   <label class="space">Control IBAN<input type="text" pattern="[0-9]{2}" value="" placeholder="XX">(dos dígitos)</label>
+   <label class="space">Entidad<input type="text" pattern="[0-9]{4}" value="" placeholder="XXXX">(cuatro dígitos)</label>
+   <label class="space">Sucursal<input type="text" pattern="[0-9]{4}" value="" placeholder="XXXX">(cuatro dígitos)</label>
+   <label class="space">DC<input type="text" pattern="[0-9]{2}" value="" placeholder="XX">(dos dígitos)</label>
+   <label class="space">Cuenta<input type="text" pattern="[0-9]{10}" value="" placeholder="XXXXXXXXXX">(diex dígitos)</label>
+ </fieldset>
+
+      <button type="submit">Enviar Datos</button>
+      <button type="reset">Borrar Datos</button>
+    </form>
+  </section>
+  
+</body>
+</html>
