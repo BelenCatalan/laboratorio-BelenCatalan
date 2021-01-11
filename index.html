@@ -4,11 +4,11 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Práctica</title>
-  <link rel="stylesheet" href="./index.css" type="text/CSS">
+  <link rel="stylesheet" href="./styles.css" type="text/CSS">
 
 </head>
 <body>
-  <header><h2>Formulario Información Alta Telefónica</h2></header>
+  <header><h1>Formulario Información Alta Telefónica</h1></header>
   <section>
     <form action="" > 
       <fieldset class="field">
@@ -63,6 +63,15 @@
    <label class="space">DC<input type="text" pattern="[0-9]{2}" value="" placeholder="XX">(dos dígitos)</label>
    <label class="space">Cuenta<input type="text" pattern="[0-9]{10}" value="" placeholder="XXXXXXXXXX">(diex dígitos)</label>
  </fieldset>
+ <fieldset class="field">
+  <legend>Datos Estadísticos - ¿Cómo nos conoció?</legend>
+ <label class="cbox"><input type="checkbox" id="cbox1" value="one">A través de la TV</label>
+ <label class="cbox"><input type="checkbox" id="cbox1" value="one">A través de la Radio</label>
+ <label class="cbox"><input type="checkbox" id="cbox1" value="one">A través de Internet</label>
+ <label class="cbox"><input type="checkbox" id="cbox1" value="one">Otros</label>
+<label><input class="rangein" type="range" name="valoracion" min="1" max="5" autocomplete="off">Valoración [1-5]</label>
+  
+</fieldset>
 
       <button type="submit">Enviar Datos</button>
       <button type="reset">Borrar Datos</button>
