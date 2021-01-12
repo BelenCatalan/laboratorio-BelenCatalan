@@ -11,6 +11,7 @@
   <header><h1>Formulario Información Alta Telefónica</h1></header>
   <section>
     <form action="" > 
+      <div class="fieldset__container">
       <fieldset class="field">
         <legend class="">Datos Personales</legend>
         <label class="space"for="nombre">Nombre:<input class="" type="text"id="nombre" name="nombre" value=""maxlength="30"/>
@@ -32,11 +33,13 @@
            <input type="text"id="localidad" name="localidad" value=""/>
          </label>
  </fieldset>
+</div>
+<div class="fieldset__container">
  <fieldset class="field">
    <legend>Tipo de Contratación</legend>
-   <input type="radio" name="contratacion" value="0" checked="checked">Nueva Contratación</input>
-   <input type="radio" name="contratacion" value="1">Portabilidad</input>
-   <input type="radio" name="contratacion" value="2">Cambio de Contrato</input>
+   <input class="color__radio" type="radio" name="contratacion" value="0" checked="checked">Nueva Contratación</input>
+   <input class="color__radio" type="radio" name="contratacion" value="1">Portabilidad</input>
+   <input class="color__radio" type="radio" name="contratacion" value="2">Cambio de Contrato</input>
  </br></br>
    <label >Elija la compañía actual: <select name="compañía" id="">
      <option value="">Movistar</option>
@@ -54,6 +57,8 @@
    
   </select></label>
  </fieldset>
+</div>
+<div class="fieldset__container">
  <fieldset class="field">
    <legend>Datos Bancarios</legend>
    <label class="space">País<input type="text" value="ES" disabled="disabled">(solo válido ES)</label>
@@ -63,18 +68,30 @@
    <label class="space">DC<input type="text" pattern="[0-9]{2}" value="" placeholder="XX">(dos dígitos)</label>
    <label class="space">Cuenta<input type="text" pattern="[0-9]{10}" value="" placeholder="XXXXXXXXXX">(diex dígitos)</label>
  </fieldset>
+</div>
+<div>
  <fieldset class="field">
   <legend>Datos Estadísticos - ¿Cómo nos conoció?</legend>
  <label class="cbox"><input type="checkbox" id="cbox1" value="one">A través de la TV</label>
  <label class="cbox"><input type="checkbox" id="cbox1" value="one">A través de la Radio</label>
  <label class="cbox"><input type="checkbox" id="cbox1" value="one">A través de Internet</label>
  <label class="cbox"><input type="checkbox" id="cbox1" value="one">Otros</label>
-<label><input class="rangein" type="range" name="valoracion" min="1" max="5" autocomplete="off">Valoración [1-5]</label>
+<label><input class="rangein" type="range" name="valoracion" value="1" min="1" max="5" autocomplete="off">Valoración [1-5]</label>
+<div class="date__container">
+
+  <label class="cbox">Fecha de la Encuesta:<input class="dateinput" type="date" name="fecha" value="2019-01-01" min="2019-01-01" max=""></label>
+</div>
   
 </fieldset>
+</div>
 
       <button type="submit">Enviar Datos</button>
       <button type="reset">Borrar Datos</button>
+      <div>
+        <button class="show__button" type="submit">Mostrar Valoración</button>
+      <button class="show__button" type="reset">Mostrar Cuenta</button>
+      <button class="show__button" type="reset">Mostrar Día Semana</button>
+      </div>
     </form>
   </section>
   
