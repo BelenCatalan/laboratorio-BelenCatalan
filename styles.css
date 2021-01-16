@@ -44,6 +44,7 @@ legend {
 .cbox {
   display: block;
 }
+
 .dateinput {
   background-color: white;
   border-radius: 0;
@@ -52,13 +53,21 @@ legend {
 .fieldset__container {
   margin-bottom: 20px;
 }
+
+.valoration {
+  margin-top: 20px;
+}
 .date__container {
-  margin-top: 25px;
+  margin-top: 20px;
   margin-bottom: 5px;
 }
 .show__button {
+  margin-top: 2px;
   width: 98px;
   height: 40px;
   background-color: pink;
   border-radius: 5px;
+  border-style: outset;
+  border-color: rgb(235, 235, 235);
+  /* box-shadow: 1px 1px 3px 0 rgba(0, 0, 0, 0.2); */
 }

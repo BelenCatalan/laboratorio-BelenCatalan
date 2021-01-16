@@ -14,7 +14,7 @@
       <div class="fieldset__container">
       <fieldset class="field">
         <legend class="">Datos Personales</legend>
-        <label class="space"for="nombre">Nombre:<input class="" type="text"id="nombre" name="nombre" value=""maxlength="30"/>
+        <label class="space"for="nombre">Nombre:<input class="" type="text"id="nombre" name="nombre" value="" maxlength="30"/>
         </label>
          <label class="space" for="apellidos">Apellidos:
 
@@ -61,12 +61,12 @@
 <div class="fieldset__container">
  <fieldset class="field">
    <legend>Datos Bancarios</legend>
-   <label class="space">País<input type="text" value="ES" disabled="disabled">(solo válido ES)</label>
-   <label class="space">Control IBAN<input type="text" pattern="[0-9]{2}" value="" placeholder="XX">(dos dígitos)</label>
-   <label class="space">Entidad<input type="text" pattern="[0-9]{4}" value="" placeholder="XXXX">(cuatro dígitos)</label>
-   <label class="space">Sucursal<input type="text" pattern="[0-9]{4}" value="" placeholder="XXXX">(cuatro dígitos)</label>
-   <label class="space">DC<input type="text" pattern="[0-9]{2}" value="" placeholder="XX">(dos dígitos)</label>
-   <label class="space">Cuenta<input type="text" pattern="[0-9]{10}" value="" placeholder="XXXXXXXXXX">(diex dígitos)</label>
+   <label class="space">País<input class="country" type="text" value="ES"  disabled="disabled">(solo válido ES)</label>
+   <label class="space">Control IBAN<input class="iban" type="text" pattern="[0-9]{2}" value="" placeholder="XX">(dos dígitos)</label>
+   <label class="space">Entidad<input class="entity" type="text" pattern="[0-9]{4}" value="" placeholder="XXXX">(cuatro dígitos)</label>
+   <label class="space">Sucursal<input class="branch" type="text" pattern="[0-9]{4}" value="" placeholder="XXXX">(cuatro dígitos)</label>
+   <label class="space">DC<input class="dc" type="text" pattern="[0-9]{2}" value="" placeholder="XX">(dos dígitos)</label>
+   <label class="space">Cuenta<input class="account" type="text" pattern="[0-9]{10}" value="" placeholder="XXXXXXXXXX">(diex dígitos)</label>
  </fieldset>
 </div>
 <div>
@@ -76,10 +76,12 @@
  <label class="cbox"><input type="checkbox" id="cbox1" value="one">A través de la Radio</label>
  <label class="cbox"><input type="checkbox" id="cbox1" value="one">A través de Internet</label>
  <label class="cbox"><input type="checkbox" id="cbox1" value="one">Otros</label>
-<label><input class="rangein" type="range" name="valoracion" value="1" min="1" max="5" autocomplete="off">Valoración [1-5]</label>
+ <div class="valoration">
+<label><input class=" js-valuation" type="range" name="valoracion" value="1" min="1" max="5" autocomplete="off">Valoración [1-5]</label>
+ </div>
 <div class="date__container">
 
-  <label class="cbox">Fecha de la Encuesta:<input class="dateinput" type="date" name="fecha" value="2019-01-01" min="2019-01-01" max=""></label>
+  <label class="cbox">Fecha de la Encuesta:<input class="dateinput js-day" type="date" name="fecha" value="2019-01-01" min="2019-01-01" max=""></label>
 </div>
   
 </fieldset>
@@ -88,12 +90,12 @@
       <button type="submit">Enviar Datos</button>
       <button type="reset">Borrar Datos</button>
       <div>
-        <button class="show__button" type="submit">Mostrar Valoración</button>
-      <button class="show__button" type="reset">Mostrar Cuenta</button>
-      <button class="show__button" type="reset">Mostrar Día Semana</button>
+        <button class="show__button"  onclick="showValuation();">Mostrar Valoración</button>
+      <button class="show__button" onclick="showBank();" >Mostrar Cuenta</button>
+      <button class="show__button"  onclick="showDay();">Mostrar Día Semana</button>
       </div>
     </form>
   </section>
-  
+  <script src="main.js" type="text/javascript"></script>
 </body>
 </html>
