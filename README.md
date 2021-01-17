@@ -1,2 +1,2 @@
-# doModal
-do a javaScript modal
+# Laboratorio Curso Samsung Desarrolladoras
+Modulo 2
