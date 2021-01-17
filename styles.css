@@ -61,6 +61,11 @@ legend {
   margin-top: 20px;
   margin-bottom: 5px;
 }
+
+.send__reset:hover {
+  border-color: blue;
+  background-color: rgb(223, 222, 222);
+}
 .show__button {
   margin-top: 2px;
   width: 98px;
